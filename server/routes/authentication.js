@@ -20,7 +20,7 @@ const createToken = (user) => {
 };
 
 router.get("/checkAuth", requireJwt, (req, res) => {
-  console.log(req.user); // routes that go pass jwtStrategy will have the user payload data parsed to req.user
+  console.log(req.user); // routes that pass jwtStrategy will have the user payload data parsed to req.user
   res.send("success");
 });
 
